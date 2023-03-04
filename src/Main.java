@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Student std1 = new Student("James", "Hassani", "40192837");
+        System.out.println(std1.getFullName());
+        std1.printStudentInfo();
+
+        std1.setGrade(20);
+        std1.printStudentInfo();
+
     }
 }
