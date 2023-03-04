@@ -20,6 +20,7 @@ public class Lab {
     }
 
     public double getAvgGrade() {
+        calAvg();
         return avgGrade;
     }
 
@@ -38,6 +39,15 @@ public class Lab {
         }
         students[currentSize] = std;
         currentSize++;
+    }
+
+    private void calAvg() {
+        double sum = 0;
+        for(Student st: students) {
+            if (st == null) break;
+            sum += st.getGrade();
+        }
+        avgGrade = sum / currentSize;
     }
 
 

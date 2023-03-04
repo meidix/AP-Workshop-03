@@ -13,6 +13,11 @@ public class Main {
         myLab.enrollStudent(std1);
         System.out.println(myLab.getCurrentSize());
         System.out.println(myLab.getMaxSize());
+        Student std2 = new Student("James", "Hoffman", "401298347");
+        std2.setGrade(17);
+        myLab.enrollStudent(std2);
+        System.out.println(myLab.getCurrentSize());
+        System.out.println(myLab.getAvgGrade());
 
     }
 }
